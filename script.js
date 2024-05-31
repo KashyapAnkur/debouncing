@@ -1,6 +1,7 @@
 const text = document.querySelector("#text");
 const data = document.querySelector(".data");
 const totalresults = document.querySelector("#totalresults");
+const apicalling = document.querySelector(".apicalling");
 
 let t;
 
