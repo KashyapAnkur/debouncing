@@ -5,7 +5,7 @@ const totalresults = document.querySelector("#totalresults");
 let t;
 
 async function fetchData(value) {
-    const response = await fetch("https://www.myjsons.com/v/fb263132");
+    const response = await fetch("http://www.myjsons.com/v/fb263132");
     const data = await response.json();
     if(value) {
         const data = dummyData.filter(e => e.toLowerCase().includes(value));
