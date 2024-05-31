@@ -27,10 +27,10 @@ const createParagraphs = (name) => {
 
 function debounce(value) {
     if(t) {
-        apicalled[0].innerHTML = "Debounced...";
+        apicalled.innerHTML = "Debounced...";
         clearTimeout(t);
     }
-    apicalled[0].innerHTML = "";
+    apicalled.innerHTML = "";
     
     t = setTimeout(async() => {
         const responseData = await fetchData(value);
