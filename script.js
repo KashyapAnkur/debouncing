@@ -42,7 +42,7 @@ function debounce(value) {
             const para = createParagraphs(name);
             data.appendChild(para);
         });
-        apicalled.innerHTML = "...";
+        apicalled.innerHTML = response.length ? "Data fetched" : "No data";
     }, 1200);
 }
 
