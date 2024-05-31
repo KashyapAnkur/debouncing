@@ -8,7 +8,7 @@ async function fetchData(value) {
     // const response = await fetch("http://www.myjsons.com/v/fb263132");
     // const data = await response.json();
     if(value) {
-        const data = dummyData.filter(e => e.toLowerCase().includes(value));
+        const filterData = dummyData.filter(e => e.toLowerCase().includes(value));
         return filterData;
     } else {
         return [];
