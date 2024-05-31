@@ -1,4 +1,4 @@
-[
+const dummyData = [
     "Julianna Owen",
     "Cannon Singh",
     "Vivienne Fox",
@@ -999,4 +999,4 @@
     "Tyson Chan",
     "Hattie Reed",
     "Easton Myers"
-  ]
+  ];
