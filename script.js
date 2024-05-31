@@ -1,7 +1,7 @@
 const text = document.querySelector("#text");
 const data = document.querySelector(".data");
 const totalresults = document.querySelector("#totalresults");
-const apicalling = document.querySelector(".apicalling");
+const apicalled = document.querySelector(".apicalled");
 
 let t;
 
@@ -27,8 +27,11 @@ const createParagraphs = (name) => {
 
 function debounce(value) {
     if(t) {
+        apicalled.innerHTML = "Debounced...";
         clearTimeout(t);
     }
+    apicalled.innerHTML = "";
+    
     t = setTimeout(async() => {
         const responseData = await fetchData(value);
         if(responseData.length) {
