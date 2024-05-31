@@ -30,7 +30,7 @@ function debounce(value) {
         apicalled.innerHTML = "Debounced...";
         clearTimeout(t);
     }
-    apicalled.innerHTML = "";
+    apicalled.innerHTML = "...";
     
     t = setTimeout(async() => {
         const responseData = await fetchData(value);
